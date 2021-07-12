@@ -4,14 +4,14 @@
     "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj": {
+    "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj",
-        "projectName": "Infra",
-        "projectPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\antonio.junior\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,74 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj",
+        "projectName": "Infra",
+        "projectPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\antonio.junior\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\antonio.junior\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

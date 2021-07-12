@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Domain.Interfaces;
+using Domain.Response;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,11 +14,31 @@ namespace UI.Controllers
     [ApiController]
     public class CheckOutController : ControllerBase
     {
-        // GET: api/<CheckOutController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IClienteService _clienteService;
+
+        public CheckOutController(IClienteService clienteService)
         {
-            return new string[] { "value1", "value2" };
+            _clienteService = clienteService;
+        }
+
+        /// <summary>
+        /// Buscar o customer, pesquisando pelo e-mail
+        /// </summary>
+        /// <param name="documento"></param>
+        /// <returns></returns>
+        [AllowAnonymous]
+        [HttpGet("{email}/buscarcliente")]
+        public async Task<ActionResult<ListCustomers>> Buscarcliente(string email)
+        {
+            try
+            {
+                ListCustomers customer = await _clienteService.BuscarCliente(email);
+                return Ok(customer);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
     }
 }

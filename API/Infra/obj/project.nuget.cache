@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oVVIyG5gugdac10un3Hhu+HuM13Uzvmj5l5pijcV6aU5JSKPYYsMv2h5Iy1YE/R0u3QvfpgAxphLVcCgoVnKvQ==",
+  "dgSpecHash": "DxQ5jUsMtxZNhL1JKbf+uRME+P7JbkPLcoCdbsVu0QVmcrHLyqgxKgiOvQ3/MIitEZC+j/sJFo0YPcMPZTK6Aw==",
   "success": true,
   "projectFilePath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Infra\\Infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\antonio.junior\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "I2Z/EQlXdulw4GK6axrGS7JsWVZwy9nnB65c3gtZdvsEAN+RlWQMgBVYOeisIRwCOMrK0j263jNo6s7Jc8ELMA==",
+  "dgSpecHash": "Bqt/8DN5+opHzlv3tp6EuzNsiF9WMi9Bi5ADIJbPaaVjxKtvHoeSIHZDQ3KP9jtgwlaiRINBEmIR/fdbn5Jayg==",
   "success": true,
   "projectFilePath": "C:\\Users\\antonio.junior\\Projetos\\NetCore\\API_Vindi\\API\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\antonio.junior\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\antonio.junior\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\antonio.junior\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,3 +1,6 @@
+using Application.Services;
+using Domain.Interfaces;
+using Infra;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +28,9 @@ namespace UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSingleton<IClienteService, ClienteService>();
+            services.AddSingleton<ICustomService, CustomServices>();
 
             services.AddSwaggerGen();
         }
