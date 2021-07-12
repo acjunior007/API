@@ -24,9 +24,10 @@ namespace Infra
             return customer;
         }
 
-        public Task<CustomerResponse> IncluirCliente(Customer customer)
+        public async Task<CustomerResponse> IncluirCliente(Customer customer)
         {
-            throw new NotImplementedException();
+            var customerResponse = await _customService.PostAsync<CustomerResponse>("customers", customer);
+            return customerResponse;
         }
 
         private string GetCustomer()
