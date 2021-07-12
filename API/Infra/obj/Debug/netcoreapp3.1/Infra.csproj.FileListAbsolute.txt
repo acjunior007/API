@@ -1,0 +1,9 @@
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\bin\Debug\netcoreapp3.1\Infra.deps.json
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\bin\Debug\netcoreapp3.1\Infra.dll
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\bin\Debug\netcoreapp3.1\Infra.pdb
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\obj\Debug\netcoreapp3.1\Infra.csproj.AssemblyReference.cache
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfoInputs.cache
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfo.cs
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\obj\Debug\netcoreapp3.1\Infra.csproj.CoreCompileInputs.cache
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\obj\Debug\netcoreapp3.1\Infra.dll
+C:\Users\antonio.junior\Projetos\NetCore\API_Vindi\API\Infra\obj\Debug\netcoreapp3.1\Infra.pdb
