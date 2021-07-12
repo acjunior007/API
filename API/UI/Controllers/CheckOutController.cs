@@ -1,6 +1,7 @@
 ﻿using Application.CustomExceptions;
 using Domain.DTO;
 using Domain.Interfaces;
+using Domain.Request;
 using Domain.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -20,10 +21,12 @@ namespace UI.Controllers
     public class CheckOutController : ControllerBase
     {
         private readonly IClienteService _clienteService;
+        private readonly IAssinaturaService _assinaturaService;
 
-        public CheckOutController(IClienteService clienteService)
+        public CheckOutController(IClienteService clienteService, IAssinaturaService assinaturaService)
         {
             _clienteService = clienteService;
+            _assinaturaService = assinaturaService;
         }
 
         /// <summary>
@@ -54,6 +57,30 @@ namespace UI.Controllers
             {
                 var response = await _clienteService.IncluirCliente(customer);
                 return Ok(new GenericResponse(true, response));
+            }
+            catch (UnprocessableException e)
+            {
+                var res = JsonConvert.DeserializeObject<Error>(e.Message);
+
+                var response = new UnprocessableEntityObjectResult(res);
+
+                return StatusCode((int)HttpStatusCode.UnprocessableEntity, response);
+            }
+            catch (Exception e)
+            {
+                var res = JsonConvert.DeserializeObject<Error>(e.Message);
+                return BadRequest(new GenericResponse(false, res));
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost("incluirAssinatura")]
+        public async Task<IActionResult> IncluirAssinatura([FromBody] AssinaturaRequest assinaturaRequest)
+        {
+            try
+            {
+                var response = await _assinaturaService.IncluirAssinatura(assinaturaRequest);
+                return Ok(new GenericResponse(true, new { response }));
             }
             catch (UnprocessableException e)
             {

@@ -32,6 +32,8 @@ namespace UI
             services.AddSingleton<IClienteService, ClienteService>();
             services.AddSingleton<ICustomService, CustomServices>();
 
+            services.AddSingleton<IAssinaturaService, AssinaturaService>();
+
             services.AddSwaggerGen();
         }
 
